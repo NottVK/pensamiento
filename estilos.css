@@ -1,0 +1,65 @@
+.album{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 32px 24px;
+    box-sizing: border-box;
+}
+
+.album1, .album2, .album3, .album4, .album5, .album6, .album7 {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.album1:hover, .album2:hover, .album3:hover, .album4:hover, .album5:hover, .album6:hover, .album7:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+}
+
+.album1 img, .album2 img, .album3 img, .album4 img, .album5 img, .album6 img, .album7 img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.album1 h3, .album2 h3, .album3 h3, .album4 h3, .album5 h3, .album6 h3, .album7 h3 {
+    margin: 16px 16px 8px 16px;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.album1 p, .album2 p, .album3 p, .album4 p, .album5 p, .album6 p, .album7 p{
+    margin: 0 16px 12px 16px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+    flex-grow: 1;
+}
+
+.album1 ul, .album2 ul, .album3 ul, .album4 ul, .album5 ul, .album6 ul, .album7 ul{
+    list-style: none;
+    padding: 0 16px 16px 16px;
+    margin: 0;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.album1 ul li, .album2 ul li, .album3 ul li, .album4 ul li, .album5 ul li, .album6 ul li, .album7 ul li{
+    padding: 4px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.album1 ul li:last-child, .album2 ul li:last-child, .album3 ul li:last-child, .album4 ul li:last-child, .album5 ul li:last-child, .album6 ul li:last-child, .album7 ul li:last-child{
+    border-bottom: none;
+}
