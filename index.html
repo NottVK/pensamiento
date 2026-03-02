@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Álbum Especial</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:radial-gradient(circle at center, #0d0d0d 0%, #000 80%);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contenedor{
+    text-align:center;
+}
+
+h1{
+    font-size:48px;
+    color:#9b59ff; /* púrpura */
+    letter-spacing:2px;
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+h1:hover{
+    color:#8b0000; /* carmesí */
+    text-shadow:0 0 15px #8b0000;
+}
+
+.boton{
+    margin-top:40px;
+    padding:15px 40px;
+    font-size:20px;
+    background:transparent;
+    border:2px solid #9b59ff;
+    color:#9b59ff;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.4s ease;
+}
+
+.boton:hover{
+    background:#8b0000;
+    border-color:#8b0000;
+    color:white;
+    box-shadow:0 0 20px #8b0000;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+    <h1>Bienvenida amorcitoooooo, pos mira esto fue lo que pense, ta rarito pero luego lo acomodo bien bonito jeje</h1>
+    
+    <button class="boton" onclick="entrar()">Ingresar</button>
+</div>
+
+<script>
+function entrar(){
+    window.location.href = "album.html";
+}
+</script>
+
+</body>
+</html>
